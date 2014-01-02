@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.dextrys.pgplugin"
+      version="0.1.0">
+    <name>AudioConvert</name>
+    <description>PhoneGap Plugin to convert mobile audio file</description>
+    <license>MIT</license>
+    <keywords>phonegap,audio convert</keywords>
+ 
+ 
+    <js-module src="www/audioconvert.js" name="AudioConvert">
+        <clobbers target="window.audioconvert" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AudioConvert">
+                <param name="android-package" value="com.dextrys.pgplugin.AudioConvert"/>
+            </feature>
+        </config-file>
+ 
+        <source-file src="src/android/AudioConvert.java" target-dir="src/com/dextrys/pgplugin/calendar" />      
+     </platform>          
+</plugin>
