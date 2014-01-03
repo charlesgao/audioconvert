@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
  
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="com.dextrys.pgplugin"
@@ -22,5 +22,18 @@
         </config-file>
  
         <source-file src="src/android/AudioConvert.java" target-dir="src/com/dextrys/pgplugin/calendar" />      
-     </platform>          
+     </platform>
+     
+     <!-- ios -->
+     <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AudioConvert">
+                <param name="ios-package" value="AudioConvert"/>
+            </feature>
+        </config-file>
+
+        <source-file src="AudioConvert.m" />
+        <header-file src="AudioConvert.h" />
+     </platform>
+
 </plugin>
