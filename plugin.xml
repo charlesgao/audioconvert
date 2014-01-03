@@ -32,7 +32,7 @@
             </feature>
         </config-file>
 
-        <source-file src="AudioConvert.m" />
-        <header-file src="AudioConvert.h" />
+        <source-file src="src/ios/AudioConvert.m" />
+        <header-file src="src/ios/AudioConvert.h" />
      </platform>
 </plugin>
