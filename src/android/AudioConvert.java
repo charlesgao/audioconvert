@@ -14,14 +14,15 @@ public class AudioConvert extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callback throws JSONException {
     	   try {
-             if (ACTION_ADD_AUDIO_CONVERT_ENTRY.equals(action)) { 
+             /*if (ACTION_ADD_AUDIO_CONVERT_ENTRY.equals(action)) { 
                  JSONObject arg_object = args.getJSONObject(0);
                  Intent calIntent = new Intent(Intent.ACTION_EDIT)
                    .setType("vnd.android.cursor.item/event")
                    .putExtra("title", arg_object.getString("title"));
  
                  this.cordova.getActivity().startActivity(calIntent);
-                 callbackContext.success();
+                 callbackContext.success();*/
+                 //nothing for now. As no andriod code is need.
                  return true;
              }
              callbackContext.error("Invalid action");
