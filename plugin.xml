@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
  
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="com.dextrys.pgplugin"
@@ -35,5 +35,4 @@
         <source-file src="AudioConvert.m" />
         <header-file src="AudioConvert.h" />
      </platform>
-
 </plugin>
