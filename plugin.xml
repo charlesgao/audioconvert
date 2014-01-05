@@ -21,7 +21,7 @@
             </feature>
         </config-file>
  
-        <source-file src="src/android/AudioConvert.java" target-dir="src/com/dextrys/pgplugin/calendar" />      
+        <source-file src="src/android/AudioConvert.java" target-dir="src/com/dextrys/pgplugin/audioconvert" />      
      </platform>
      
      <!-- ios -->
